@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8c80405f-2a8f-4651-9fe1-69187f0ec723" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/pago/efectivo/online/dtoUpgrade/ConsultaResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/pago/efectivo/online/dtoUpgrade/DataDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/pago/efectivo/online/dtoUpgrade/DataDirectaResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/pago/efectivo/online/dtoUpgrade/DataResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/pago/efectivo/online/dtoUpgrade/DataReversaResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/pago/efectivo/online/dtoUpgrade/DirectaRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/pago/efectivo/online/dtoUpgrade/DirectaResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/pago/efectivo/online/dtoUpgrade/DocumentDetailDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/pago/efectivo/online/dtoUpgrade/DocumentDetailDirectaDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/pago/efectivo/online/dtoUpgrade/DocumentResponseDetailDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/pago/efectivo/online/dtoUpgrade/DocumentReversaDetailRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/pago/efectivo/online/dtoUpgrade/DocumentReversaDetailResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/pago/efectivo/online/dtoUpgrade/ReversaRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/pago/efectivo/online/dtoUpgrade/ReversaResponseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DiagramaDeClasesCashIn v2.drawio" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DiagramaDeClasesCashIn v2.drawio.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Source/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/rest/standard/v2/dto/ConsultaRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/pago/efectivo/online/dto/ConsultaRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/rest/standard/v2/dto/ConsultaResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/pago/efectivo/online/dto/ConsultaResponseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/rest/standard/v2/dto/DirectaRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/pago/efectivo/online/dto/DirectaRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/rest/standard/v2/dto/DirectaResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/pago/efectivo/online/dto/DirectaResponseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/rest/standard/v2/dto/ErrorDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/pago/efectivo/online/dto/ErrorDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/rest/standard/v2/dto/FieldSearchDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/pago/efectivo/online/dto/FieldSearchDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/rest/standard/v2/dto/ItemDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/pago/efectivo/online/dto/ItemDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/rest/standard/v2/dto/RequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/pago/efectivo/online/dto/RequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/rest/standard/v2/dto/RequestTrxDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/pago/efectivo/online/dto/RequestTrxDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/rest/standard/v2/dto/ResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/pago/efectivo/online/dto/ResponseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/rest/standard/v2/dto/ResponseTrxDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/pago/efectivo/online/dto/ResponseTrxDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/rest/standard/v2/dto/ReversaRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/pago/efectivo/online/dto/ReversaRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/rest/standard/v2/dto/ReversaResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/pago/efectivo/online/dto/ReversaResponseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/rest/standard/v2/dto/TokenRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/pago/efectivo/online/dto/TokenRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/rest/standard/v2/dto/TokenResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/pago/efectivo/online/dto/TokenResponseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/rest/standard/v2/dto/TrazabilidadDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/pago/efectivo/online/dto/TrazabilidadDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/rest/standard/v2/entities/BarraRestCashin.java" beforeDir="false" afterPath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/pago/efectivo/online/entities/BarraRestCashin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/rest/standard/v2/entities/DeudaParameters.java" beforeDir="false" afterPath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/pago/efectivo/online/entities/DeudaParameters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/rest/standard/v2/entities/MapMsgRestStandard.java" beforeDir="false" afterPath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/pago/efectivo/online/entities/MapMsgRestStandard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/rest/standard/v2/entities/ParametrosConector.java" beforeDir="false" afterPath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/pago/efectivo/online/entities/ParametrosConector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/rest/standard/v2/helpers/LoggingRequestInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/pago/efectivo/online/helpers/LoggingRequestInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/rest/standard/v2/helpers/ResponseNotValidException.java" beforeDir="false" afterPath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/pago/efectivo/online/helpers/ResponseNotValidException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/rest/standard/v2/helpers/RestExecute.java" beforeDir="false" afterPath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/pago/efectivo/online/helpers/RestExecute.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/rest/standard/v2/helpers/RestTemplateResponseErrorHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/pago/efectivo/online/helpers/RestTemplateResponseErrorHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/rest/standard/v2/service/AnalizarErrorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/pago/efectivo/online/service/AnalizarErrorServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/rest/standard/v2/service/BasicAuthenticationExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/pago/efectivo/online/service/BasicAuthenticationExecutor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/rest/standard/v2/service/EchoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/pago/efectivo/online/service/EchoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/rest/standard/v2/service/ProxyFactoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/pago/efectivo/online/service/ProxyFactoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/rest/standard/v2/service/ProxyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/pago/efectivo/online/service/ProxyServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/rest/standard/v2/transformers/BillerTransformer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/pago/efectivo/online/transformers/BillerTransformer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/rest/standard/v2/utils/DateUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/pago/efectivo/online/utils/DateUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/rest/standard/v2/utils/Decimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/pago/efectivo/online/utils/Decimal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/rest/standard/v2/utils/ErrorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/pago/efectivo/online/utils/ErrorCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/rest/standard/v2/utils/JsonMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/pago/efectivo/online/utils/JsonMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/src/main/resources/conector.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Source/src/main/resources/conector.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/src/main/webapp/WEB-INF/jboss-web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Source/src/main/webapp/WEB-INF/jboss-web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/wu-connector-cashin-rest-standard-v2.iml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../_app/build/apache-maven-3.6.3" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="3CzkhZlnrkuaZOEytnONhd1ZtZE" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "DEV",
+    "last_opened_file_path": "X:/Users/mhinojosa/M2/m2/repository/com/wu/billersplus/billersplus-framework/2.0.2.1/billersplus-framework-2.0.2.1.jar",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "MavenSettings"
+  }
+}]]></component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean install" />
+    </option>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8c80405f-2a8f-4651-9fe1-69187f0ec723" name="Changes" comment="" />
+      <created>1777395906492</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1777395906492</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Source/src/main/java/com/wu/billersplus/connector/cashin/pago/efectivo/online/service/ProxyServiceImpl.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

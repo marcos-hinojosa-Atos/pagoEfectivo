@@ -1,0 +1,17 @@
+{
+     "productoUtilityCode" : "90061238",
+     "fechaHoraFe": 1515188820000,
+     "idOperador": "PXI971",
+     "plataforma":"REST",
+     "codigoPais":"AR",
+     "importe" : "6.0",
+     "codigoMoneda" : "ARS",
+     "idCaja" : "pues-sf2",
+     "idTerminal" : "T40404",
+     "idTransaccionFe" : "1647677269",
+	 "deudaBus1c":"36070476",
+	 "deudaBus2c":"7711448699",
+     "deudaBus3c":null,
+	 "deudaBus1n":0,
+	 "deudaBus2n":0
+}
