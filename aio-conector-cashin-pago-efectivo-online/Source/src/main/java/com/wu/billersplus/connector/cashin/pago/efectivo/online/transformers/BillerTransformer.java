@@ -4,6 +4,7 @@ package com.wu.billersplus.connector.cashin.pago.efectivo.online.transformers;
 import ar.com.sepsa.commons.model.biller.Connector;
 import ar.com.sepsa.commons.model.biller.ConnectorParameter;
 import com.wu.billersplus.connector.cashin.pago.efectivo.online.dto.*;
+import com.wu.billersplus.connector.cashin.pago.efectivo.online.dtoUpgrade.*;
 import com.wu.billersplus.connector.cashin.pago.efectivo.online.entities.BarraRestCashin;
 import com.wu.billersplus.connector.cashin.pago.efectivo.online.utils.DateUtils;
 import com.wu.billersplus.connector.cashin.pago.efectivo.online.utils.ErrorCode;
@@ -84,12 +85,12 @@ public class BillerTransformer implements BillerPlusTransformerService {
 		}
 
 		com.wu.billersplus.connector.cashin.pago.efectivo.online.dtoUpgrade.ConsultaResponseDTO responseDTO = (com.wu.billersplus.connector.cashin.pago.efectivo.online.dtoUpgrade.ConsultaResponseDTO) consultaResponse.getResponseBiller();
-		if(!StringUtils.equalsIgnoreCase(ID_OPERATION_OK, responseDTO.getCodResponse())){
+		if(!StringUtils.equalsIgnoreCase(ID_OPERATION_OK, responseDTO.getCode())){
 			//response.setCodigoError(Integer.valueOf(responseDTO.getCodResponse()));
 			response.setCodigoError(1);
 			//response.setDescripcionError("ENT: ".concat(responseDTO.getCodResponse()).concat(" ").concat(responseDTO.getMsgResponse()));
 			response.setDescripcionError("ENT: ".concat("1").concat(" ").concat("MSG_RESPONSE"));
-			logger.info("Emtrando ConnectorResponse: responseDTO.getMsgResponse(): " + responseDTO.getMsgResponse());
+			logger.info("Emtrando ConnectorResponse: responseDTO.getMessage(): " + responseDTO.getMessage());
 			return new ConnectorResponse<ConsultaDeudaResponse>( response, null, consultaResponse.getRequestBillerTrace(), consultaResponse.getResponseBillerTrace());
 		}
 
@@ -185,21 +186,24 @@ public class BillerTransformer implements BillerPlusTransformerService {
 			logger.warn("La respuesta wrappeada del biller es nula");
 			return new ConnectorResponse<PagoResponse>(pago, req.getDatosAdicionalesAnulacion(),directa.getRequestBillerTrace(), directa.getResponseBillerTrace());
 		}
-		DirectaResponseDTO responseDto = (DirectaResponseDTO) directa.getResponseBiller();
+		com.wu.billersplus.connector.cashin.pago.efectivo.online.dtoUpgrade.DirectaResponseDTO responseDto = 
+			(com.wu.billersplus.connector.cashin.pago.efectivo.online.dtoUpgrade.DirectaResponseDTO) directa.getResponseBiller();
 		// Seteo el pago con el codigo de error y el msg
 		if(responseDto != null){
-			logger.debug("Codigo respuesta de directa: "+responseDto.getCodResponse());
-			pago.setCodigoError(Integer.parseInt(responseDto.getCodResponse()));
-		    pago.setDeudaTicket(responseDto.getMsgTicket());
-			pago.setDescripcionError("ENT: ".concat(responseDto.getCodResponse()).concat(" ").concat(responseDto.getMsgResponse()));
+			logger.debug("Codigo respuesta de directa: "+responseDto.getCode());
+			pago.setCodigoError(Integer.parseInt(responseDto.getCode()));
+		    pago.setDeudaTicket(responseDto.getData() != null ? responseDto.getData().getMsgTicket() : "");
+			pago.setDescripcionError("ENT: ".concat(responseDto.getCode()).concat(" ").concat(responseDto.getMessage()));
 		}
 		logger.debug("Transformando respuesta de DIRECTA con [CodigoProducto = {}]", pago.getProductoUtilityCode());
 		//fields for revert
 		datoAdicional = req.getDatosAdicionalesAnulacion();
 		if(datoAdicional == null || (datoAdicional != null 	&& datoAdicional.get(PARAM_SEQUENCE) == null && datoAdicional.get(PARAM_COD_TRX) == null)){
 			datoAdicional = new HashMap<String, String>();
-			datoAdicional.put(PARAM_SEQUENCE, responseDto.getSequence());
-			datoAdicional.put(PARAM_COD_TRX, responseDto.getCodTrx());
+			if(responseDto != null && responseDto.getData() != null) {
+				datoAdicional.put(PARAM_SEQUENCE, responseDto.getData().getSequence() != null ? responseDto.getData().getSequence() : "");
+				datoAdicional.put(PARAM_COD_TRX, responseDto.getData().getCodTrx() != null ? responseDto.getData().getCodTrx() : "");
+			}
 		}else{
 			datoAdicional.put(PARAM_SEQUENCE, datoAdicional.get(PARAM_SEQUENCE));
 			datoAdicional.put(PARAM_COD_TRX, datoAdicional.get(PARAM_COD_TRX));
@@ -233,13 +237,14 @@ public class BillerTransformer implements BillerPlusTransformerService {
 			logger.warn("La respuesta wrappeada del biller es nula");
 			return new ConnectorResponse<PagoResponse>(pago, null, reversa.getRequestBillerTrace(),	reversa.getResponseBillerTrace());
 		}
-		ReversaResponseDTO response = (ReversaResponseDTO) reversa.getResponseBiller();
+		com.wu.billersplus.connector.cashin.pago.efectivo.online.dtoUpgrade.ReversaResponseDTO response = 
+			(com.wu.billersplus.connector.cashin.pago.efectivo.online.dtoUpgrade.ReversaResponseDTO) reversa.getResponseBiller();
 		if(response != null){
-			pago.setCodigoError(Integer.parseInt(response.getCodResponse()));
-			pago.setDescripcionError(response.getMsgResponse());
+			pago.setCodigoError(Integer.parseInt(response.getCode()));
+			pago.setDescripcionError(response.getMessage());
 		}
 		logger.info("[Conector Codigo {}] Transfromando Response de REVERSA con [CodigoProducto {}]",CONNECTOR_CODE, pago.getProductoUtilityCode());
-		return new ConnectorResponse<PagoResponse>(pago, new HashMap<String, String>(), reversa.getRequestBillerTrace(),reversa.getRequestBillerTrace());
+		return new ConnectorResponse<PagoResponse>(pago, new HashMap<String, String>(), reversa.getRequestBillerTrace(),reversa.getResponseBillerTrace());
 	}
 
 	
