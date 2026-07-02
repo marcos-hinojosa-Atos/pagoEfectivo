@@ -1,0 +1,2 @@
+# pagoEfectivo
+Pago efectivo
